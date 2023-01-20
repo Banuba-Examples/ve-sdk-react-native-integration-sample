@@ -1,7 +1,7 @@
 # Banuba Video Editor SDK - React Native Expo-CLI integration sample.
 [Banuba Video Editor SDK](https://www.banuba.com/video-editor-sdk) allows you to quickly add short video functionality and possibly AR filters and effects into your mobile app.
 <br></br>
-This sample demonstrates how to run Video Editor SDK with [React Native](https://reactnative.dev/) and [Expo-CLI](https://docs.expo.dev/workflow/expo-cli/).  
+This sample demonstrates how to run Video Editor SDK with [React Native](https://reactnative.dev/) and [Expo-CLI](https://docs.expo.dev/workflow/expo-cli/).
 
 <ins>The main part of integration and customization should be implemented in **android**, **ios** directories using Native Android and iOS development.<ins>
 
@@ -32,15 +32,14 @@ Feel free to [contact us](https://www.banuba.com/faq/kb-tickets/new) if you have
 
 ### Android
 1. Make sure variable ```ANDROID_SDK_ROOT``` is set in your environment or setup [sdk.dir](https://github.com/Banuba-Examples/ve-sdk-react-native-integration-sample/blob/master/android/local.properties#L1).
-2. Set Banuba token in the sample app [resources](https://github.com/Banuba-Examples/ve-sdk-react-native-integration-sample/blob/main/android/app/src/main/res/values/strings.xml#L6).
+2. Set Banuba license token [within the app](https://github.com/Banuba-Examples/ve-sdk-react-native-integration-sample/blob/main/android/app/src/main/java/com/vesdkreactnativeintegrationsample/MainApplication.java#L38).
 3. Run ```npm run android``` in terminal to launch the sample app on a device or launch the app in IDE i.e. Intellij, VC, etc.
 4. Follow [Android Integration Guide](mddocs/android_integration.md) to integrate Video Editor SDK into your React Native Expo project.
 
-### iOS  
+### iOS
 1. Install Cocoa Pods dependencies. Run ```cd ios``` and ```pod install``` in terminal.
-2. Set Banuba token in [VideoEditorModule initializer](https://github.com/Banuba-Examples/ve-sdk-react-native-integration-sample/blob/main/ios/VideoEditorModule.swift#L186).
+2. Set Banuba license token [within the app](https://github.com/Banuba-Examples/ve-sdk-react-native-integration-sample/blob/master/ios/AppDelegate.swift#20).
 3. Click on ```ios/vesdkreactnativeintegrationsample.xcworkspace```. Open **Signing & Capabilities** tab in Target settings and select your Development Team.
 4. Run command ```npm run ios``` in terminal to launch the sample on simulator ```iPhone 11``` or choose device or specific simulator in XCode to launch the sample.
 5. Follow [iOS Integration Guide](mddocs/ios_integration.md) to integrate Video Editor SDK into your React Native Expo project.
-
 
